@@ -1,10 +1,17 @@
 import './App.css'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Container from './components/Container/Container'
 
-function App() {
+interface IAppProps {}
+
+const App: React.FunctionComponent<IAppProps> = () => {
   return (
-    <h1 className="text-xl font-semibold underline">
-      Tailwind CSS is working !!
-    </h1>
+    <>
+      <Header />
+      <Container />
+      <Footer />
+    </>
   )
 }
 
